@@ -14,8 +14,68 @@ font-family: 'Ubuntu', sans-serif;
 header {
     background-color: #ffffff;
     box-shadow: 0px 3px 10px #e7e7e7;
+    width: 100%;
 }
 
+#buttonlogin {
+    position: relative;
+}
+#icon-loginDiv {
+    font-size: 20px;
+    margin-bottom: 0px; 
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #ab29e77a;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.2s;
+}
+#icon-loginDiv:hover {
+   transition: 0.2s;
+    background-color: #4b1564;
+    
+}
+#icon-cadastroDiv {
+    margin-top: 0; 
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #ab29e77a;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+#icon-cadastroDiv:hover {
+    transition: 0.2s;
+     background-color: #4b1564;
+     
+ }
+#containerlogin {
+    background-color: #ffffff;
+    height: 120px;
+    width: 130px;
+    position: absolute;
+    display: flex;
+    right: 50%; 
+    top: 100%;
+    transform: translateX(50%); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px  #575656;
+    justify-content: center;
+     flex-direction: column; 
+     text-align: left;
+     transition: 0.5s;
+     
+     
+  
+    
+}
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -57,11 +117,13 @@ header {
     font-size: 1.1rem;
     color: #252020;
     font-weight: bold;
+    transition: 0.2s;    
 }
 .nav-link:hover {
   
     color: #580081;
-    text-decoration: underline;
+  
+    transition: 0.2s;
 }
 .nav-list1 {
     display: flex;
@@ -114,9 +176,9 @@ button:hover  i.bi-person{
     
 }
 #icon-conta{
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 30px;
-    color: #a0a0a0;
+    color: #696969; 
 }
 #icon-bag{
     font-size: 20px;
@@ -142,7 +204,7 @@ button:hover  i.bi-person{
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -183,7 +245,75 @@ button:hover  i.bi-person{
     .open {
         display: block;
     }
+    #buttonlogin {
+    position: relative;
+}
+.mobile-menu #containerlogin{
+    background-color: #ffffff;
+    margin-top: 0;
+    position: absolute;
+    top: 60%;
+    justify-content: center;
+}
+#containerlogin{
+    margin-top: 10%;
+}
+#icon-loginDiv {
+    font-size: 20px;
+    margin-bottom: 0px; 
+   
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #ab29e77a;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.2s;
+}
+#icon-loginDiv:hover {
+   transition: 0.2s;
+    background-color: #4b1564;
     
+}
+#icon-cadastroDiv {
+    margin-top: 0; 
+    font-size: 15px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #ab29e77a;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+#icon-cadastroDiv:hover {
+    transition: 0.2s;
+     background-color: #4b1564;
+     
+ }
+#containerlogin {
+    background-color: #ffffff;
+    height: 120px;
+    width: 130px;
+    position: absolute;
+    display: flex;
+    right: 50%; 
+    top: 100%;
+    transform: translateX(50%); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px  #575656;
+    justify-content: center;
+     flex-direction: column; 
+     text-align: left;
+     
+     
+     
+  
+    
+}
     
 }
 

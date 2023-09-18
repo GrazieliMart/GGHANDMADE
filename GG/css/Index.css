@@ -1,4 +1,29 @@
-.back-index{
-    background-color: black;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Jost', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 }
+.back-index {
+    width: 100%;
+    height: 500px;
+   
+ }
+ 
+ .back-index2 {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(204, 0, 255);
+    margin-right: 10px;
+ }
+ 
+ @media screen and (max-width: 1000px) {
+     .back-index {
+         height: 200px;
+     }
+     
+     .back-index-mobile {
+         width: 100%;
+         height: 200px;
+     }
+ }

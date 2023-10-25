@@ -12,7 +12,8 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #593E29;
+    ;
     box-shadow: 0px 3px 10px #e7e7e7;
     width: 100%;
 }
@@ -21,21 +22,21 @@ header {
     position: relative;
 }
 #icon-loginDiv {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 0px; 
-    font-weight: bold;
+  
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
-    background-color: #ab29e77a;
+  
     border-radius: 10px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     transition: 0.2s;
 }
 #icon-loginDiv:hover {
    transition: 0.2s;
-    background-color: #4b1564;
+    background-color: #ca7eee;
     
 }
 #icon-cadastroDiv {
@@ -92,16 +93,108 @@ header {
 }
 
 .logoNav{
-    height: 70px;
+   
+    width: 170px;
 }
 
 .nav-list {
-    display: flex;
+   
     align-items: center;
+    width: 100%;
+    background-color: #946948;
+    text-align: center;
+   
+   
 }
 
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    width: 800px;
+    color: #0d0c22;
+   
+    transition: .3s ease;
+  }
+  
+  .input::placeholder {
+    color: #777;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #777;
+    width: 1rem;
+    height: 1rem;
+  }
+  .div-nav-log{
+    background-color: #946948;
+     border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    width: 250px;
+    
+    
+    
+  }
+  .div-nav-login{
+ 
+    display: inline;
+    border: 1px solid transparent;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+
+  .div-nav-login:hover {
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+      border-radius: 10px;
+      transition: 0.2s;
+  }
+  .div-nav-car{
+    display: inline;
+    padding: 12px;
+    border: 1px solid transparent;
+  }
+  .div-nav-car i{
+  height: 50px;
+  color: #fff;
+  }
+  .div-nav-car:hover {
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+      border-radius: 10px;
+      transition: 0.2s;
+  }
 
 
+  .nav-login{
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.nav-login-id{
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
 .nav-list ul {
     display: flex;
     justify-content: center;
@@ -110,18 +203,21 @@ header {
 
 .nav-item {
     margin: 0 15px;
+    padding: 7px;
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.1rem;
-    color: #252020;
-    font-weight: bold;
+  font-size: 10px;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 17px;
     transition: 0.2s;    
 }
+
 .nav-link:hover {
   
-    color: #580081;
+    color: #b9b9b9;
   
     transition: 0.2s;
 }
@@ -193,7 +289,24 @@ button:hover  i.bi-person{
   
   
 }
-
+.login-popup {
+    display: none;
+    position: fixed; 
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 6%;
+    right: 5%;
+    width: 150px;
+    text-align: center;
+    z-index: 2; 
+  }
+  
+  .div-nav-login:hover .login-popup {
+    display: block;
+  }
+ 
 
 .mobile-menu-icon {
     display: none;
@@ -206,12 +319,17 @@ button:hover  i.bi-person{
 
 @media screen and (max-width: 1300px) {
     .nav-bar {
-        padding: 1.5rem 4rem;
+        padding-left: 50px;
     }
+   
     .nav-item {
         display: none;
     }
     .login-Icons {
+        display: none;
+    }
+   
+    .group{
         display: none;
     }
     .mobile-menu-icon {
@@ -222,6 +340,7 @@ button:hover  i.bi-person{
         border: none;
         cursor: pointer;
     }
+   
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -241,6 +360,25 @@ button:hover  i.bi-person{
         align-items: center;
         justify-content: center; 
         margin: 0 auto; 
+    }
+    .div-nav-log{
+      
+        height: 50px;
+       align-items: center;
+      
+    }
+    .div-nav-login{
+        padding: 5px;
+        border: none;
+    }
+    .div-nav-login:hover{
+        border: none;
+    }
+    .div-nav-car{
+        padding: 5px;
+    }
+    .div-nav-car:hover{
+        border: none;
     }
     .open {
         display: block;

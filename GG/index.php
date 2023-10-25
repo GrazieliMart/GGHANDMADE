@@ -13,23 +13,25 @@
 </head>
 <?php
 include 'php/Nav.php';
-
 ?>
+
 <body>
+
+
+
+
+
     <script src="js/scriptNav.js"></script>
     <script src="js/scriptNavLogin.js"></script>
-    <img src="img/back.jpg" class="back-index">
+  
 
 
-    <div class="back-index2">  
-        
-        
-    </div>
+   
 
 
     <!--Responsividade-->
     <div class="mobile-menu">
-    <img src="img/back.jpg" class="back-index-mobile">
+   
     </div>
 
 </body>

@@ -22,6 +22,19 @@ echo'<div class="form-style">
 </div>
 <button class="btn-login" type="submit">Login</button>
 <br> 
+<div id="g_id_onload"
+        data-client_id="YOUR_GOOGLE_CLIENT_ID"
+        data-login_uri="https://your.domain/your_login_endpoint"
+        data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+    </div>
 
 
 <div class="cadastro-link">
@@ -29,6 +42,7 @@ echo'<div class="form-style">
         <a href="#">Cadastre-se</a>
     </p>
 </div>
+
 <div class="voltar-link">
         <a href="Index.php"><i class="bi bi-house" id="icone-casa" onclick="BotaoVoltar()"></i>Voltar</a>
 </div>
@@ -63,8 +77,7 @@ echo'<div class="form-style">
 
 </div>
 <button class="btn-login" type="submit">Login</button>
-<br> 
-
+<div id="buttonDiv"></div>
 
 <div class="cadastro-link">
     <p>Não tem uma conta?

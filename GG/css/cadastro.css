@@ -23,7 +23,7 @@ body {
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
     color: rgba(243, 244, 246, 1);
 }
 .form-style h1{
@@ -180,6 +180,50 @@ margin: -15px 0 15px;
     margin: 0;
     
 }
+
+.error-message {
+    background-color: #ff5b5b0f;
+    color: white;
+    border: 2px solid #a528289e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.error-message i{
+    color: rgb(158, 26, 26);
+}
+.title-error{
+    color: rgb(158, 26, 26);
+}
+.subtitle-error a{
+    color: #a4a2a2;
+}
+.subtitle-error a:hover{
+    color: #6d6a69;
+    transition: 0.2s;
+}
+.titleEsqueciSenha h1{
+    color: #000; 
+}
+.titleEsqueciSenha p{
+    color: #3f3c3a79;
+}
+.sucess-message {
+    background-color: #d4e5bc66;
+    color: #3f3c3a79;
+    border: 2px solid #d4e5bc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.title-sucess {
+    color: rgb(31 169 68);
+}
+.sucess-message i{
+    color:  rgb(31 169 68);
+}
 .logo-login-kassadin
 {
     display: flex;
@@ -200,11 +244,10 @@ margin: -15px 0 15px;
       
 
     }
-    .text-div input{
-    width: 280px;
-    padding-left: 20px;
-   
-   }
+    .text-div input {
+        width: 100%;
+        padding-left: 0;
+    }
    .text-div{
     margin: 0;
    }

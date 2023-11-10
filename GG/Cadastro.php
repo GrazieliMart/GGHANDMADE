@@ -1,9 +1,8 @@
 <?php
+session_start();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
-session_start();
 
 include('bd.php');
 
@@ -33,8 +32,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadUsuario'])) {
 
 
 <div class="form-style">
+
+<?php
+            // As mensagens de sucesso ou erro serão exibidas dentro da div form-style
+            if (isset($_SESSION['success_message'])) {
+                echo '<div class="sucess-message">' . $_SESSION['success_message'] . '</div>';
+                unset($_SESSION['success_message']); // Limpar a mensagem após exibição
+            }
+
+            if (isset($_SESSION['error_message'])) {
+                echo '<div class="error-message">' . $_SESSION['error_message'] . '</div>';
+                unset($_SESSION['error_message']); // Limpar a mensagem após exibição
+            }
+            ?>
 <form method="post">
-<div class="logo-login-kassadin">
+<div class="titleEsqueciSenha">
+    <h1>Cadastre-se</h1>
+    <p>Crie sua conta para poder realizar compras</p>
 
 </div>
 
@@ -43,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadUsuario'])) {
 </div>
 
 <div class="text-div">
-<input type="text" placeholder="E-mail" require name="email">
+<input type="email" placeholder="E-mail" require name="email">
 </div>
 
 
@@ -65,11 +79,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadUsuario'])) {
 </div>
 
 <div class="voltar-link">
-        <a href="Index.php"><i class="bi bi-house" id="icone-casa" onclick="BotaoVoltar()"></i>Voltar</a>
+        <a href="Login.php"><i class="bi bi-box-arrow-in-left"></i>Voltar ao Login</a>
 </div>
 
 </form>
 </div>
+
 
 
 
@@ -78,39 +93,44 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadUsuario'])) {
 <div class="mobile-menu">
 <div class="form-style">
 
+
 <div class="logo-login-kassadin">
-<img src="img/kassadin.png" id="logo-login">
-</div>
-<div class="text-div">
-<i class="bi bi-person-fill" ></i>
-<input type="text" placeholder="E-mail" require>
 
 </div>
+
+<div class="text-div">
+<input type="text" placeholder="Nome" require name="name">
+</div>
+
+<div class="text-div">
+<input type="email" placeholder="E-mail" require name="email">
+</div>
+
+
 <div class="text-div">
 <i class="bi bi-eye-fill" id="eye" onclick="MostrarSenha()" ></i>
-<input type="password" placeholder="Senha" require id="senha">  
-
+<input type="password" placeholder="Senha" require id="senha" name="senha">  
 </div>
-<div class="lembrar-senha">
-<label><input type="checkbox">Lembrar de mim</label>
 
-<a href="#">Esqueceu a senha?</a>
 
-</div>
-<button class="btn-login" type="submit">Login</button>
-<div id="buttonDiv"></div>
+<button class="btn-login" name="cadUsuario" type="submit">Cadastrar</button>
+<br> 
+
+
 
 <div class="cadastro-link">
-    <p>Não tem uma conta?
-        <a href="#">Cadastre-se</a>
+    <p>Ao criar uma conta, você concorda com a 
+        <a href="#">Política de Privacidade</a> da GGHANDMADE.
     </p>
 </div>
+
 <div class="voltar-link">
-        <a href="Index.php"><i class="bi bi-house" id="icone-casa" onclick="BotaoVoltar()"></i>Voltar</a>
+        <a href="Login.php"><i class="bi bi-box-arrow-in-left"></i>Voltar ao Login</a>
 </div>
 
 
 </div>
+
 </div>
 
 <script src="js/scriptEye.js"></script>

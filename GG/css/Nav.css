@@ -160,6 +160,10 @@ header {
     margin-right: 20px;
     border-radius: 5px;
   }
+  .div-nav-login h2{
+    font-size: 13px;
+    color: #946948;
+  }
   .overlay {
     position: fixed;
     top: 0;

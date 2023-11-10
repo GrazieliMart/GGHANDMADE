@@ -203,6 +203,12 @@ header {
     color: #946948;
     
 }
+.nav-login:hover{
+    font-size: 13px;
+    text-decoration: underline;
+    color: #946948;
+    
+}
 .nav-login-id{
     font-size: 13px;
     text-decoration: none;
@@ -329,6 +335,7 @@ button:hover  i.bi-person{
     color: #593E29;
     width: 100%;
     margin-bottom: 2px;
+    font-weight: 500;
 }
 .login-popup button a{
     font-size: 15px;
@@ -357,7 +364,7 @@ button:hover  i.bi-person{
     
 }
 .link-cad a:hover{
-    color: #814416;
+    color: #cea88b;
     
 }
 
@@ -368,6 +375,7 @@ button:hover  i.bi-person{
     
 
   }
+  
  
 
 .mobile-menu-icon {

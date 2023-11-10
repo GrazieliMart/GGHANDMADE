@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,9 +27,7 @@ include 'php/Nav.php';
     <script src="js/scriptNavLogin.js"></script>
   
 
-
-   
-
+    
 
     <!--Responsividade-->
     <div class="mobile-menu">

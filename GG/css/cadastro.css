@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Jost', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #e8e8e8;
+    background-size: cover;
+    background-position: center;
+    animation: color 20s infinite linear;
+}
+
+.form-style{
+    width: 320px;
+    border-radius: 2px;
+    background-color:#fff;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    color: rgba(243, 244, 246, 1);
+}
+.form-style h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.form-style .text-div{
+position: relative;
+width: 100%;
+height: 50px;
+margin: 30px 0;
+}
+.text-div input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: solid 2px #94694827;
+    border-radius: 40px;
+    color: #2e2b29f5;
+text-align: center;
+    font-size: 16px;right: 10px;
+ 
+    
+}
+
+.text-div input:focus {
+    border-color:#94694879;
+    transition: 0.3s;
+  }
+.text-div input::placeholder{
+     color: #94694838;
+     font-size: 15px;
+     
+}
+.text-div i{
+position: absolute;
+right: 20px;
+top:50%;
+color: #3f3c3a79;
+transform: translateY(-50%);
+}
+.text-div #eye{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+.form-style .lembrar-senha{
+display: flex;
+justify-content: space-between;
+font-size: 14.5px;
+margin: -15px 0 15px;
+}
+.form-style .lembrar-senha label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+.form-style .lembrar-senha a{
+    color: #3f3c3a79;
+    text-decoration: none;
+
+}
+
+.form-style .lembrar-senha a:hover{
+    text-decoration: underline;
+}
+.form-style .btn-login {
+    width: 100%;
+    height: 45px;
+    background: #bd9372;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,-1);
+    font-size: 20px;
+    color: rgb(255 255 255);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.form-style .btn-login:hover{
+    background: #946948;
+    transition: 0.3s;
+
+}
+.formatic-google{
+    width: 50px;
+    display: flex;
+}
+.form-style .cadastro-link{
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px ;
+    color: #3f3c3a79;
+}
+.form-style .cadastro-link p {
+    color: #3f3c3a79;
+    text-decoration: none;
+
+}
+.form-style .cadastro-link a{
+    color: #946948;
+    text-decoration: none;
+
+}
+.form-style .cadastro-link a:hover{
+    color: #946948;
+    text-decoration: none;
+
+}
+.form-style .cadastro-link p a:hover{
+    color: #946948;
+    text-decoration: underline;
+    
+}
+.form-style .voltar-link {
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+
+.form-style .voltar-link i {
+    color: #3f3c3a79;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.form-style .voltar-link a {
+    color: #3f3c3a79;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.form-style .voltar-link a:hover {
+    color: #3f3c3a79;
+    text-decoration: underline;
+}
+
+.form-style .voltar-link p a:hover {
+    color: #3f3c3a79;
+    text-decoration: underline;
+}
+
+.form-style .voltar-link i:hover {
+    color: #3f3c3a79;
+    text-decoration: underline;
+}
+#logo-login{
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    
+}
+.logo-login-kassadin
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .form-style{
+       width: 300px;
+       padding: 10px 20px;
+       margin-top: 90px;
+      
+
+    }
+    .text-div input{
+    width: 280px;
+    padding-left: 20px;
+   
+   }
+   .text-div{
+    margin: 0;
+   }
+   #logo-login{
+    height: 100px;
+    width: 100px;
+   }
+   
+}

@@ -1,5 +1,5 @@
 <?php
-echo '   <link rel="icon" type="image/png" href="img/LOGO GGHANDMADE.png" sizes="32x32">
+echo '   <link rel="icon" type="image/png" href="img/gatito.png" sizes="32x32">
 <header>
 <nav class="nav-bar">
     <div class="logo">
@@ -24,7 +24,7 @@ echo '   <link rel="icon" type="image/png" href="img/LOGO GGHANDMADE.png" sizes=
     
     <div class="login-popup">
         <a href="Login.php" class="nav-login"><button class="login-button">Login</button></a>
-        <p class="link-cad">Não tem login?<br><a href="Login.php">Cadastre-se</a></p>
+        <p class="link-cad">Não tem login?<br><a href="Cadastro.php">Cadastre-se</a></p>
     </div>
 </div>
 

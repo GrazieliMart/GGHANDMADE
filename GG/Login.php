@@ -1,3 +1,9 @@
+<?php
+
+include("bd.php");
+loginGG();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +20,95 @@
 https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js
 "></script>
   
-
+<link rel="icon" type="image/png" href="img/gatito.png" sizes="32x32">
 </head>
 
 <body class="body-back">
 
-<?php
-include 'php/FormLogin.php';
-?>
 
+<div class="form-style">
+<form method="post">
+<div class="logo-login-kassadin">
+<img src="img/gatito.png" id="logo-login">
+</div>
+<div class="text-div">
+<i class="bi bi-person-fill" ></i>
+<input type="text" placeholder="E-mail" require name="email">
+
+</div>
+<div class="text-div">
+<i class="bi bi-eye-fill" id="eye" onclick="MostrarSenha()" ></i>
+<input type="password" placeholder="Senha" require id="senha" name="senha">  
+
+</div>
+<div class="lembrar-senha">
+
+
+<a href="#">Esqueceu a senha?</a>
+
+</div>
+<button class="btn-login" type="submit" name="submit">Login</button>
+<br> 
+
+<div id="buttonDiv"></div>
+
+
+<div class="cadastro-link">
+    <p>Não tem uma conta?
+        <a href="Cadastro.php">Cadastre-se</a>
+    </p>
+</div>
+
+<div class="voltar-link">
+        <a href="Index.php"><i class="bi bi-house" id="icone-casa" onclick="BotaoVoltar()"></i>Voltar</a>
+</div>
+
+</form>
+</div>
+
+
+
+<!--Responsividade-->
+
+<div class="mobile-menu">
+<div class="form-style">
+
+<div class="logo-login-kassadin">
+<img src="img/kassadin.png" id="logo-login">
+</div>
+<div class="text-div">
+<i class="bi bi-person-fill" ></i>
+<input type="text" placeholder="E-mail" require>
+
+</div>
+<div class="text-div">
+<i class="bi bi-eye-fill" id="eye" onclick="MostrarSenha()" ></i>
+<input type="password" placeholder="Senha" require id="senha">  
+
+</div>
+<div class="lembrar-senha">
+<label><input type="checkbox">Lembrar de mim</label>
+
+<a href="#">Esqueceu a senha?</a>
+
+</div>
+<button class="btn-login" type="submit">Login</button>
+<div id="buttonDiv"></div>
+
+<div class="cadastro-link">
+    <p>Não tem uma conta?
+        <a href="#">Cadastre-se</a>
+    </p>
+</div>
+<div class="voltar-link">
+        <a href="Index.php"><i class="bi bi-house" id="icone-casa" onclick="BotaoVoltar()"></i>Voltar</a>
+</div>
+
+
+</div>
+</div>
 <script>
+
         function handleCredentialResponse(response) {
             const data = jwt_decode(response.credential)
             console.log(data)

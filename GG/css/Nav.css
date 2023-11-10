@@ -60,7 +60,7 @@ header {
     background-color: #ffffff;
     height: 120px;
     width: 130px;
-    position: absolute;
+  
     display: flex;
     right: 50%; 
     top: 100%;
@@ -142,8 +142,8 @@ header {
     height: 1rem;
   }
   .div-nav-log{
-    background-color: #946948;
-     border-radius: 10px;
+    background-color: #ffffff;
+     border-radius: 1px;
     align-items: center;
     display: flex;
     justify-content: center; 
@@ -155,28 +155,43 @@ header {
   .div-nav-login{
  
     display: inline;
-    border: 1px solid transparent;
+   
     padding: 5px;
     margin-right: 20px;
     border-radius: 5px;
   }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
 
   .div-nav-login:hover {
-    border: rgba(255, 255, 255, 0.5) 1px solid;
-      border-radius: 10px;
+    
+      border-radius: 2px;
+    
       transition: 0.2s;
   }
   .div-nav-car{
     display: inline;
     padding: 12px;
-    border: 1px solid transparent;
+    
   }
-  .div-nav-car i{
-  height: 50px;
-  color: #fff;
-  }
+  .div-nav-car i {
+    font-size: 30px; /* Ajuste o tamanho conforme necessário */
+    color: #946948;
+}
+.div-nav-car i:hover {
+    font-size: 30px; /* Ajuste o tamanho conforme necessário */
+    color: #946948;
+}
   .div-nav-car:hover {
-    border: rgba(255, 255, 255, 0.5) 1px solid;
+   
       border-radius: 10px;
       transition: 0.2s;
   }
@@ -185,13 +200,13 @@ header {
   .nav-login{
     font-size: 13px;
     text-decoration: none;
-    color: #fff;
+    color: #946948;
     
 }
 .nav-login-id{
     font-size: 13px;
     text-decoration: none;
-    color: #fff;
+    color: #946948;
     font-weight: bold;
     
 }
@@ -217,7 +232,7 @@ header {
 
 .nav-link:hover {
   
-    color: #b9b9b9;
+    color: #d3d3d3;
   
     transition: 0.2s;
 }
@@ -291,20 +306,67 @@ button:hover  i.bi-person{
 }
 .login-popup {
     display: none;
-    position: fixed; 
+    position: absolute;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    top: 6%;
-    right: 5%;
-    width: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
     z-index: 2; 
-  }
+    width: 90px;
+    text-align: start;
+    transition: 1s;
+    
+
+}
+.login-popup button{
+    cursor: pointer;
+    background-color: #f8e08c;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    color: #593E29;
+    width: 100%;
+    margin-bottom: 2px;
+}
+.login-popup button a{
+    font-size: 15px;
+}
+.login-popup button:hover{
+    background-color: #dfc156;
+   
+
+    transition: 0.2s;
+}
+.login-popup a{
+    font-size: 11px;
+    cursor:pointer;
+}
+.login-popup p{
+    font-size: 11px;
+    cursor:pointer;
+}
+
+.link-cad p{
+    font-size: 11px;
+
+}
+.link-cad a{
+    color: #593E29;
+    
+}
+.link-cad a:hover{
+    color: #814416;
+    
+}
+
   
   .div-nav-login:hover .login-popup {
     display: block;
+    transition: 1s;
+    
+
   }
  
 
@@ -321,7 +383,9 @@ button:hover  i.bi-person{
     .nav-bar {
         padding-left: 50px;
     }
-   
+   .icon{
+    color: #fff;
+   }
     .nav-item {
         display: none;
     }
@@ -361,18 +425,40 @@ button:hover  i.bi-person{
         justify-content: center; 
         margin: 0 auto; 
     }
-    .div-nav-log{
-      
+    .div-nav-log {
         height: 50px;
-       align-items: center;
-      
+        align-items: center;
     }
-    .div-nav-login{
+
+      .div-nav-login {
         padding: 5px;
         border: none;
-    }
-    .div-nav-login:hover{
+        width: 78px;
+        margin-right: 10px;
+        font-size: 10px;
+      }
+    .div-nav-login:hover {
         border: none;
+    }
+    .nav-login {
+        font-size: 9px;
+        text-decoration: none;
+        color: #946948;
+      }
+      .nav-login-id {
+        font-size: 9px;
+        text-decoration: none;
+        color: #946948;
+        font-weight: bold;
+      }
+
+      .div-nav-car i {
+        font-size: 20px; /* Ajuste o tamanho conforme necessário */
+        color: #946948;
+    }
+    .div-nav-car i:hover {
+        font-size: 20px; /* Ajuste o tamanho conforme necessário */
+        color: #946948;
     }
     .div-nav-car{
         padding: 5px;

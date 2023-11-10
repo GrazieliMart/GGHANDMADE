@@ -1,5 +1,6 @@
 <?php
-echo ' <header>
+echo '   <link rel="icon" type="image/png" href="img/LOGO GGHANDMADE.png" sizes="32x32">
+<header>
 <nav class="nav-bar">
     <div class="logo">
         <img src="img/logo.jpeg" class="logoNav">
@@ -20,14 +21,17 @@ echo ' <header>
     <a href="Login.php" class="nav-login">Olá, faça seu login</a>
     <br>
     <a href="Login.php" class="nav-login-id">Contas e Pedidos</a>
+    
     <div class="login-popup">
-    <button class="login-button"> <a href="Login.php" class="nav-login">Login</a></button>
-  </div>
+        <a href="Login.php" class="nav-login"><button class="login-button">Login</button></a>
+        <p class="link-cad">Não tem login?<br><a href="Login.php">Cadastre-se</a></p>
+    </div>
 </div>
 
+
 <div class="div-nav-car">
-<i class="bi bi-cart2"></i>
-    <a href="#" class="nav-login">Carrinho</a>
+
+    <a href="#" class="nav-login"><i class="bi bi-cart2"></i></a>
    
 </div>
 </div>
@@ -69,5 +73,6 @@ echo ' <header>
     
 </div>
 </header>  
+
 ';
 ?>

@@ -39,17 +39,55 @@ include 'NavBar.php';
 
 
 <body>
-<div class="content">
-        <h2>Bem-vindo, <?php echo $userName; ?>!</h2>
-    </div>
-    <a href="logout.php">
-            <span class="icon"><i class="bi bi-arrow-bar-left"></i></span>
-            <span class="txt-link">SAIR</span>
-        </a>
+
 
     <script src="js/scriptNav.js"></script>
     <script src="js/scriptNavLogin.js"></script>
-  
+    <div class="carousel" id="myCarousel">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="img/alo.png" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="imagem2.jpg" alt="Imagem 2">
+    </div>
+    <div class="carousel-item">
+      <img src="imagem3.jpg" alt="Imagem 3">
+    </div>
+    <div class="carousel-item">
+      <img src="imagem4.jpg" alt="Imagem 4">
+    </div>
+    <div class="carousel-item">
+      <img src="imagem5.jpg" alt="Imagem 5">
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-control" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-control" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+  function showSlide(index) {
+    const carouselInner = document.querySelector('.carousel-inner');
+    const newTransformValue = -index * 100 + '%';
+    carouselInner.style.transform = 'translateX(' + newTransformValue + ')';
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  }
+</script>
 
     
 

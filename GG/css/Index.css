@@ -20,7 +20,54 @@ font-family: 'Ubuntu', sans-serif;
     background-color: rgb(204, 0, 255);
     margin-right: 10px;
  }
+ * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+  }
  
+
+  .carousel img {
+    height: 600px;
+   width: 100%;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+  }
  @media screen and (max-width: 1000px) {
      .back-index {
          height: 200px;

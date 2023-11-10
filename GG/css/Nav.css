@@ -34,28 +34,8 @@ header {
     color: rgb(0, 0, 0);
     transition: 0.2s;
 }
-#icon-loginDiv:hover {
-   transition: 0.2s;
-    background-color: #ca7eee;
-    
-}
-#icon-cadastroDiv {
-    margin-top: 0; 
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    background-color: #ab29e77a;
-    border-radius: 10px;
-    color: #fff;
-    
-}
-#icon-cadastroDiv:hover {
-    transition: 0.2s;
-     background-color: #4b1564;
-     
- }
+
+
 #containerlogin {
     background-color: #ffffff;
     height: 120px;
@@ -160,6 +140,14 @@ header {
     margin-right: 20px;
     border-radius: 5px;
   }
+  .div-nav-login-login{
+ 
+    display: inline;
+   
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
   .div-nav-login h2{
     font-size: 13px;
     color: #946948;
@@ -192,12 +180,14 @@ header {
 }
 .div-nav-car i:hover {
     font-size: 30px; /* Ajuste o tamanho conforme necessário */
-    color: #946948;
+    color: #cf9466;
+    transition: 0.3s;
 }
   .div-nav-car:hover {
    
       border-radius: 10px;
       transition: 0.2s;
+
   }
 
 
@@ -205,11 +195,12 @@ header {
     font-size: 13px;
     text-decoration: none;
     color: #946948;
+    font-weight: bold;
     
 }
 .nav-login:hover{
     font-size: 13px;
-    text-decoration: underline;
+
     color: #946948;
     
 }
@@ -217,7 +208,30 @@ header {
     font-size: 13px;
     text-decoration: none;
     color: #946948;
-    font-weight: bold;
+    font-weight: 100;
+   
+
+    
+}
+.nav-login-id:hover{
+    font-size: 13px;
+    text-decoration: underline;
+    color: #946948;
+
+    
+}
+.nav-login-login{
+    font-size: 13px;
+    text-decoration: none;
+    color: #946948;
+
+    
+}
+.nav-login-login:hover{
+    font-size: 13px;
+    text-decoration: underline;
+    color: #946948;
+
     
 }
 .nav-list ul {
@@ -324,7 +338,7 @@ button:hover  i.bi-person{
     border-bottom-right-radius: 5px;
     text-align: center;
     z-index: 2; 
-    width: 90px;
+    width: 100px;
     text-align: start;
     transition: 1s;
     
@@ -346,7 +360,7 @@ button:hover  i.bi-person{
 }
 .login-popup button:hover{
     background-color: #dfc156;
-   
+    width: 100%;
 
     transition: 0.2s;
 }
@@ -441,7 +455,10 @@ button:hover  i.bi-person{
         height: 50px;
         align-items: center;
     }
-
+    .div-nav-login h2{
+        font-size: 8px;
+        color: #946948;
+      }
       .div-nav-login {
         padding: 5px;
         border: none;
@@ -461,8 +478,22 @@ button:hover  i.bi-person{
         font-size: 9px;
         text-decoration: none;
         color: #946948;
-        font-weight: bold;
+        /* font-weight: bold; */
+    }
+    .div-nav-login:hover {
+        border: none;
+    }
+    .nav-login-login {
+        font-size: 9px;
+        text-decoration: none;
+        color: #946948;
       }
+      .nav-login-login {
+        font-size: 9px;
+        text-decoration: none;
+        color: #946948;
+        /* font-weight: bold; */
+    }
 
       .div-nav-car i {
         font-size: 20px; /* Ajuste o tamanho conforme necessário */
@@ -470,7 +501,8 @@ button:hover  i.bi-person{
     }
     .div-nav-car i:hover {
         font-size: 20px; /* Ajuste o tamanho conforme necessário */
-        color: #946948;
+        color: #cf9466;
+        transition: 0.3s;
     }
     .div-nav-car{
         padding: 5px;

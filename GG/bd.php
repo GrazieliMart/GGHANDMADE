@@ -99,4 +99,30 @@ function loginGG()
 
     $pdo = null;
 }
+function atualizarSenhaUsuario($email, $novaSenha)
+{
+    $pdo = conexaoBd();
+
+    if (empty($email) || empty($novaSenha)) {
+        die("Por favor, forneça um e-mail e a nova senha.");
+    }
+
+    // Hash da nova senha
+    $hashed_password = password_hash($novaSenha, PASSWORD_BCRYPT);
+
+    // Atualizar a senha do usuário no banco de dados
+    $update_query = "UPDATE cadGG SET senhaHash = :password_hash WHERE email = :user_email";
+    $stmt = $pdo->prepare($update_query);
+    $stmt->bindParam(":password_hash", $hashed_password);
+    $stmt->bindParam(":user_email", $email);
+
+    if ($stmt->execute()) {
+        echo ' <div class="error-messageSucesso">';
+        echo "<span style='color: white;'>Senha atualizada com sucesso!</span></div>";
+    } else {
+        echo ' <div class="error-messageIncorreto">';
+        echo "<span style='color: black;'>Erro! Tente Novamente</span></div>";
+    }
+}
+
 ?>

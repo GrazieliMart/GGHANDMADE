@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -45,25 +46,33 @@ if (isset($_SESSION['email'])) {
 
 
 <div class="div-nav-log">
-<div class="div-nav-login">
+            <div class="div-nav-login">
+                <?php if (!isset($_SESSION['email'])) { ?>
+                    <a href="Login.php" class="nav-login">Olá, faça seu login</a>
+                    <br>
+                    <a href="Login.php" class="nav-login-id">Contas e Pedidos</a>
+                    <div class="login-popup">
+                        <a href="Login.php" class="nav-login">
+                            <button class="login-button">Login</button>
+                        </a>
+                        <p class="link-cad">Não tem login?<br><a href="Cadastro.php">Cadastre-se</a></p>
+                    </div>
+                <?php } else { ?>
+                    <h2>Bem-vindo, <?php echo $userName; ?>!</h2>
+                    <a href="Login.php" class="nav-login-login">Contas e Pedidos</a>
+                    <div class="login-popup">
+                        <a href="logout.php" class="nav-login">
+                            <button class="login-button">Sair</button>
+                        </a>
+                    </div>
 
-    <a href="Login.php" class="nav-login">Olá, faça seu login</a>
-    <h2>Bem-vindo, <?php echo $userName; ?>!</h2>
-    
-    <a href="Login.php" class="nav-login-id">Contas e Pedidos</a>
-    
-    <div class="login-popup">
-        <a href="Login.php" class="nav-login"><button class="login-button">Login</button></a>
-        <p class="link-cad">Não tem login?<br><a href="Cadastro.php">Cadastre-se</a></p>
-    </div>
-</div>
+                <?php } ?>
+            </div>
 
-
-<div class="div-nav-car">
-
-    <a href="#" class="nav-login"><i class="bi bi-cart2"></i></a>
-   
-</div>
+            <div class="div-nav-car">
+                <a href="#" class="nav-login"><i class="bi bi-cart2"></i></a>
+            </div>
+        </div>
 </div>
 
     <div class="mobile-menu-icon">
